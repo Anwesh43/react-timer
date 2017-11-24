@@ -14,7 +14,7 @@ export default class ReactTimer extends Component {
     }
     renderTimer() {
         if(this.state.show) {
-            return (<Timer ref ="timer_xyz" onStop={this.onStop} onStart={this.props.onStart} seconds = {this.props.seconds} hours={this.props.hours} minutes={this.props.minutes} start={this.props.start}>
+            return (<Timer ref ="timer_xyz" onStop={this.onStop} onStart={this.props.onStart} seconds = {this.props.seconds} hours={this.props.hours} minutes={this.props.minutes} start={this.props.start} count_down={this.props.count_down}>
                         {this.props.children}
                     </Timer>)
         }

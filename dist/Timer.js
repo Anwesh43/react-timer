@@ -46,7 +46,7 @@ var Timer = function (_Component) {
                 this.props.onStart();
             }
             this.interval = setInterval(function () {
-                var time = Math.max(_this2.state.time + 1, _TimerUtil2.default.getCurrTimeFromDate() - _this2.state.prev_time);
+                var time = Math.max(_this2.state.time + 1, _TimerUtil2.default.getCurrTimeFromDate() - prev_time);
                 if (time >= time_limit) {
                     time = time_limit;
                     if (_this2.props.onStop) {
@@ -67,8 +67,9 @@ var Timer = function (_Component) {
     }, {
         key: 'getCountTime',
         value: function getCountTime() {
+            console.log(this.state.time);
             var time = this.props.count_down ? this.state.time_limit - this.state.time : this.state.time;
-            return t;
+            return time;
         }
     }, {
         key: 'renderChildren',
@@ -81,7 +82,7 @@ var Timer = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-
+            console.log(this.renderChildren());
             return _react2.default.createElement(
                 'div',
                 null,

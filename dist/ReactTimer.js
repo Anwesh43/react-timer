@@ -49,7 +49,7 @@ var ReactTimer = function (_Component) {
             if (this.state.show) {
                 return _react2.default.createElement(
                     _Timer2.default,
-                    { ref: 'timer_xyz', onStop: this.onStop, onStart: this.props.onStart, seconds: this.props.seconds, hours: this.props.hours, minutes: this.props.minutes, start: this.props.start },
+                    { ref: 'timer_xyz', onStop: this.onStop, onStart: this.props.onStart, seconds: this.props.seconds, hours: this.props.hours, minutes: this.props.minutes, start: this.props.start, count_down: this.props.count_down },
                     this.props.children
                 );
             }
