@@ -1,12 +1,24 @@
 {
-  "name": "react-timer",
+  "name": "awesome-react-timer",
   "version": "1.0.0",
-  "description": "",
+  "description": "An awesome timer component for react",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords":[
+      "timer",
+      "react",
+      "react component",
+      "react timer",
+      "hoc",
+      "higer order component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anwesh43/react-timer"
+  },
+  "author": "Anwesh Mishra",
   "license": "ISC",
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
